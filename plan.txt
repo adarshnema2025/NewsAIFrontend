@@ -1,0 +1,196 @@
+Build a responsive frontend using **React.js + Tailwind CSS** for a News AI application.
+
+## 🔧 Tech Requirements
+
+* React.js means jsx not tsx(functional components + hooks)
+* Tailwind CSS for styling
+* React Router for navigation
+* Axios for API calls
+* Context API for global state (auth + user data)
+
+---
+
+## 🔐 AUTHENTICATION FLOW
+
+### Pages:
+
+1. Login Page
+2. Signup Page
+
+### Features:
+
+* JWT-based authentication
+* OAuth2 (Google login button UI only if backend not ready)
+* Store token in localStorage
+* Redirect to homepage after login
+* Protected routes
+
+---
+
+## 🏠 MAIN HOME PAGE (After Login)
+
+### 1. Navbar
+
+* Logo: "NewsAI"
+* Categories (clickable): Business, Tech, Sports, Health, etc.
+* Profile Avatar (right side)
+
+  * Dropdown:
+
+    * Dashboard
+    * Archives
+    * Logout
+
+---
+
+### 2. News Feed Section
+
+Display news as **responsive cards grid**
+
+#### Each Card contains:
+
+* Image (top)
+* Title
+* Source/Author
+* 3 Buttons:
+
+  1. **AI Summary**
+
+     * Opens modal with summary (API call)
+  2. **Read Original**
+
+     * Opens article URL in new tab
+  3. **Add to Notebook**
+
+     * Dropdown:
+
+       * List of user notebooks
+       * "Create New Notebook" option
+
+---
+
+### 🧠 Add to Notebook Flow
+
+* On click → dropdown opens
+* Select notebook → API call
+* OR
+* Click "Create New Notebook"
+
+  * Opens modal
+  * Input: name + description
+  * Create → auto-select
+
+---
+
+## 📊 DASHBOARD PAGE
+
+### Display:
+
+* All user notebooks in **card layout**
+
+#### Each Notebook Card:
+
+* Name
+* Description
+* Buttons:
+
+  * Open Notebook
+  * Download PDF
+  * Toggle Public/Private
+
+---
+
+## 📖 NOTEBOOK DETAILS PAGE
+
+* List all pages/articles inside notebook
+* Each item shows:
+
+  * Title
+  * AI Summary
+  * Notes
+* Option to reorder (optional)
+
+---
+
+## 📌 ARCHIVES PAGE
+
+* Show all bookmarked articles
+* Same card UI as homepage
+
+---
+
+## 🛒 MARKETPLACE PAGE (Creative)
+
+Build a simple marketplace with:
+
+* AI-curated notebooks (public)
+* Trending topics
+* Featured creators
+* Cards showing:
+
+  * Notebook title
+  * Creator name
+  * Preview
+  * "View Notebook"
+
+---
+
+## 🎨 UI/UX REQUIREMENTS
+
+* Fully responsive (mobile + desktop)
+* Clean modern UI (like Medium)
+* Use:
+
+  * Cards
+  * Modals
+  * Dropdowns
+  * Loading skeletons
+
+---
+
+## 📦 COMPONENT STRUCTURE
+
+Create reusable components:
+
+* Navbar
+* NewsCard
+* NotebookCard
+* Modal
+* Dropdown
+* Button
+
+---
+
+## 🔄 STATE MANAGEMENT
+
+Use Context API for:
+
+* Auth state
+* User info
+* Notebooks list
+
+---
+
+## 🌐 API INTEGRATION
+
+Integrate with backend APIs:
+
+* Auth APIs
+* News API
+* Notebook APIs
+* Add to notebook
+* Get notebooks
+* Download PDF
+
+---
+
+## ⚡ BONUS (if possible)
+
+* Infinite scroll for news
+* Toast notifications
+* Dark mode
+
+---
+
+Build clean folder structure and reusable components.
+Focus more on functionality than heavy design.
