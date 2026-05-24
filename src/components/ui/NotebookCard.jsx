@@ -98,10 +98,10 @@ export default function NotebookCard({ notebook }) {
                 </div>
 
                 {/* Article count */}
-                <p className="text-xs text-slate-400 dark:text-slate-500">
+       {         /*<p className="text-xs text-slate-400 dark:text-slate-500">
                     📄 {pageCount} article{pageCount !== 1 ? 's' : ''}
                 </p>
-
+*/}
                 {/* Actions */}
                 <div className="flex flex-wrap gap-2 mt-auto pt-2 border-t border-slate-100 dark:border-slate-700">
                     <Link to={`/notebooks/${notebook.id}`} className="btn-primary text-xs py-1.5 px-3">
